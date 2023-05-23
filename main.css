@@ -29,7 +29,7 @@ html {
   
   .img {
     background: url("/home-images/home-landscape.jpg") no-repeat;
-    height: calc(100vh - 73px);
+    height: calc(100vh - 74px);
     background-size: cover;
     background-position: center;
     position: relative;

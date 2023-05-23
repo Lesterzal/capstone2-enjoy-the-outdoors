@@ -1,0 +1,22 @@
+h1 {
+  color: palevioletred;
+  }
+  
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+  background-color: whitesmoke;
+  }
+  
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  }
+  
+.gallery-image {
+  max-width: 15rem;
+  }
