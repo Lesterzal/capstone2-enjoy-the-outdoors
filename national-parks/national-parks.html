@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="national-parks.css">
+    <link rel="stylesheet" href="/css/national-parks.css">
     <link rel="stylesheet" href="/css/header.css">
 
-    <script defer src="/enjoy-the-outdoors/scripts/locationData.js"></script>
+    <script defer src="/national-parks/national-parks.js"></script>
+    <script defer src="/scripts/locationData.js"></script>
+    <script defer src="/scripts/parkTypeData.js"></script>
+    <script defer src="/scripts/nationalParkData.js"></script>
+    <script defer src=""></script>
+
     <title>National Parks</title>
 </head>
 <body>
@@ -25,14 +30,15 @@
 
       <div>
 
-        <h1>National Parks Location Search</h1>
-        <select name="state-selection" id="state-selection">
-            <option value="">Click here to choose a State...</option>
-        </select>
+        <h1>National Parks Search</h1>
+        <div id="selectOptions">
 
-      </div>
-
-      <main></main>
+          <select id="searchFilter" class="form-select text-bg-light opacity-75 mb-3">
+              <option id="default">Search Parks by</option>
+              <option id="location">Location</option>
+              <option id="parkType">Park Type</option>
+              <option id="nationalPark">All</option>
+          </select>
 
 </body>
 </html>
