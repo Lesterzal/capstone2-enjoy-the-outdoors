@@ -16,3 +16,19 @@ window.onload = function () {
   document.querySelector("#searchByNationalPark").style.display = "none";
   document.querySelector("#parksDescription").style.display = "none";
 };
+
+function SearchFilterDropdowns() {
+  const searchFilter = document.querySelector("#searchFilter").value;
+  hideElements();
+
+  if (searchFilter == "Location") {
+    document.querySelector("#searchByLocation").style.display = "block";
+    addOptionsOnLocation();
+  } else if (searchFilter == "Park Type") {
+    document.querySelector("#searchByParkType").style.display = "block";
+    addOptionsOnPark();
+  } else if (searchFilter == "All") {
+    document.querySelector("#searchByNationalPark").style.display = "block";
+    addAllOptions();
+  }
+}
