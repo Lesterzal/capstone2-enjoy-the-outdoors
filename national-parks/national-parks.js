@@ -40,17 +40,41 @@ function SearchFilterDropdowns() {
 // functions to add options dynamically to select elements based on different criteria
 
 function addOptions(element, options) {
-  
+  for (let option of options) {
+    const newOption = document.createElement("option");
+    newOption.value = option;
+    newOption.textContent = option;
+    element.appendChild(newOption);
+  }
 }
 
 function addOptionsOnLocation() {
+  const searchByLocation = document.querySelector("#searchByLocation");
+  searchByLocation.innerHTML = "";
 
+  addOptions(searchByLocation, locationsArray);
 }
 
 function addOptionsOnPark() {
+  const searchByParkType = document.querySelector("#searchByParkType");
+  searchByParkType.innerHTML = "";
 
+  addOptions(searchByParkType, parkTypesArray);
 }
 
 function addAllOptions() {
-  
+  const searchByNationalPark = document.querySelector("#searchByNationalPark");
+  searchByNationalPark.innerHTML = "";
+
+  const selectNationalParkOption = document.createElement("option");
+  selectNationalParkOption.value = "";
+  selectNationalParkOption.textContent = "Select a National Park";
+  searchByNationalPark.appendChild(selectNationalParkOption);
+
+  for (let park of nationalParksArray) {
+    const newNationalParkOption = document.createElement("option");
+    newNationalParkOption.value = park.LocationName;
+    newNationalParkOption.textContent = park.LocationName;
+    searchByNationalPark.appendChild(newNationalParkOption);
+  }
 }
