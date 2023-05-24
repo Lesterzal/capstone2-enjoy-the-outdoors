@@ -1,3 +1,5 @@
+// setting up event listeners for various elements on the page
+
 window.onload = function () {
   const searchFilter = document.querySelector("#searchFilter");
   searchFilter.addEventListener("change", SearchFilterDropdowns);
@@ -17,6 +19,8 @@ window.onload = function () {
   document.querySelector("#parksDescription").style.display = "none";
 };
 
+// displaying different sets of search options based on the selected value of the search filter dropdown
+
 function SearchFilterDropdowns() {
   const searchFilter = document.querySelector("#searchFilter").value;
   hideElements();
@@ -31,4 +35,22 @@ function SearchFilterDropdowns() {
     document.querySelector("#searchByNationalPark").style.display = "block";
     addAllOptions();
   }
+}
+
+// functions to add options dynamically to select elements based on different criteria
+
+function addOptions(element, options) {
+  
+}
+
+function addOptionsOnLocation() {
+
+}
+
+function addOptionsOnPark() {
+
+}
+
+function addAllOptions() {
+  
 }
