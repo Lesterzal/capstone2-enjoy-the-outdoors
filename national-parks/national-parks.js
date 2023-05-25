@@ -105,3 +105,26 @@ function searchByLocationOnChange() {
     }
   }
 }
+
+function searchByParkOnChange() {
+  const searchByParkType = document.querySelector("#searchByParkType").value;
+  const searchByNationalPark = document.querySelector("#searchByNationalPark");
+
+  searchByNationalPark.innerHTML = "";
+
+  const option = document.createElement("option");
+  option.value = "";
+  option.textContent = "Please Select a Park ";
+  searchByNationalPark.appendChild(option);
+
+  for (let park of nationalParksArray) {
+    if (park.LocationName.includes(searchByParkType) && searchByParkType !== "") {
+      const parkOption = document.createElement("option");
+      parkOption.value = park.LocationName;
+      parkOption.textContent = park.LocationName;
+
+      searchByNationalPark.appendChild(parkOption);
+      searchByNationalPark.style.display = "block";
+    }
+  }
+}
