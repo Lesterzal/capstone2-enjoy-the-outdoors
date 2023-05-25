@@ -78,3 +78,30 @@ function addAllOptions() {
     searchByNationalPark.appendChild(newNationalParkOption);
   }
 }
+
+// change events 
+
+function searchByLocationOnChange() {
+  const searchByLocation = document.querySelector("#searchByLocation").value;
+  const searchByNationalPark = document.querySelector("#searchByNationalPark");
+
+  searchByNationalPark.innerHTML = "";
+
+  const newOption = document.createElement("option");
+  newOption.value = "";
+  newOption.text = "Please Select a Park ";
+  searchByNationalPark.appendChild(newOption);
+
+  for (let place of nationalParksArray) {
+    if (searchByLocation == place.State) {
+      const locationOption = document.createElement("option");
+      locationOption.value = place.LocationName;
+      locationOption.text = place.LocationName;
+      searchByNationalPark.appendChild(locationOption);
+
+      searchByNationalPark.style.display = "block";
+    } else if (searchByLocation == "") {
+      searchByNationalPark.style.display = "none";
+    }
+  }
+}
