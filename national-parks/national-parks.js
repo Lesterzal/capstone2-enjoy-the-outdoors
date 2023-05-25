@@ -156,3 +156,10 @@ function displaysearchByNationalParkChange() {
     }
   }
 }
+
+function hideElements() {
+  document.querySelector("#searchByLocation").style.display = "none";
+  document.querySelector("#searchByParkType").style.display = "none";
+  document.querySelector("#searchByNationalPark").style.display = "none";
+  document.querySelector("#parksDescription").style.display = "none";
+}
