@@ -10,16 +10,4 @@ h1 {
     margin-left: 5rem;
     margin-right: 5rem;
     background-color: whitesmoke;
-    }
-    
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    }
-    
-  .gallery-image {
-    max-width: 15rem;
-    }
-  
+    }    
