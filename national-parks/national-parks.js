@@ -37,7 +37,6 @@ function handleFilterDropdownChange() {
 function populateOptions(element, options) {
   element.innerHTML = "";
 
-  // Add the "Select Your State" option only if it's the states dropdown
   if (element === searchByLocation) {
     const defaultOption = document.createElement("option");
     defaultOption.value = "";
@@ -58,7 +57,7 @@ function populateLocationOptions() {
 }
 
 function populateParkOptions() {
-  populateOptions(searchByParkType, parkTypesArray);
+  populateOptions(searchByParkType, ['Select Park Type', ...parkTypesArray]);
 }
 
 function populateAllOptions() {
