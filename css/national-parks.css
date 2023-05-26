@@ -9,14 +9,3 @@ body {
   margin-top: 6rem;
   background-color: #e5d0b1;
   }
-  
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  }
-  
-.gallery-image {
-  max-width: 15rem;
-  }

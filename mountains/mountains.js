@@ -52,3 +52,4 @@ function populateMountainInfo() {
   mountainInfoCardImg.src = `images/${mountain.img}`;
   mountainInfoCard.style.display = "block";
 }
+

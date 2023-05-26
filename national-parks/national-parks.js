@@ -37,6 +37,14 @@ function handleFilterDropdownChange() {
 function populateOptions(element, options) {
   element.innerHTML = "";
 
+  // Add the "Select Your State" option only if it's the states dropdown
+  if (element === searchByLocation) {
+    const defaultOption = document.createElement("option");
+    defaultOption.value = "";
+    defaultOption.textContent = "Select Your State";
+    element.appendChild(defaultOption);
+  }
+
   for (let option of options) {
     const newOption = document.createElement("option");
     newOption.value = option;
