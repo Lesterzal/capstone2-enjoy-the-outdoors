@@ -1,4 +1,3 @@
-// Store references to DOM elements
 const searchFilter = document.querySelector("#searchFilter");
 const searchByLocation = document.querySelector("#searchByLocation");
 const searchByParkType = document.querySelector("#searchByParkType");
