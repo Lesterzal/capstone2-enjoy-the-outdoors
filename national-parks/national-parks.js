@@ -114,21 +114,13 @@ function handleNationalParkChange() {
   for (let park of nationalParksArray) {
     if (selectedNationalPark === park.LocationName) {
       parksInformation.style.display = "block";
-      parksInformation.innerHTML =
-        "<span style='color: white;'>Name : </span>" +
-        park.LocationName +
-        "<br/>" +
-        "<span style='color: white;'>Address : </span>" +
-        park.Address +
-        "<br/>" +
-        "<span style='color: white;'>City : </span>" +
-        park.City +
-        "<br/>" +
-        "<span style='color: white;'>State : </span>" +
-        park.State +
-        "<br/>" +
-        "<span style='color: white;'>Zip Code : </span>" +
-        park.ZipCode;
+      parksInformation.innerHTML = `
+        <span style='color: black;'>Name : </span>${park.LocationName}<br/>
+        <span style='color: black;'>Address : </span>${park.Address}<br/>
+        <span style='color: black;'>City : </span>${park.City}<br/>
+        <span style='color: black;'>State : </span>${park.State}<br/>
+        <span style='color: black;'>Zip Code : </span>${park.ZipCode}
+      `;
     }
   }
 
