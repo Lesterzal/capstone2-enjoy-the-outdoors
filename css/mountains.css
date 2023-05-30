@@ -4,7 +4,7 @@ h1 {
   
 body {
   background: url("/home-images/pexels-eberhard-grossgasteiger-1287145.jpg") no-repeat;
-  height: calc(100vh - 74px);
+  height: calc(100vh - 96px);
   background-size: cover;
   background-position: center;
   position: relative;

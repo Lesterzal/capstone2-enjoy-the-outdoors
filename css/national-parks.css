@@ -4,11 +4,10 @@ h1 {
   
 body {
   background: url("/home-images/pexels-johannes-plenio-1423600.jpg") no-repeat;
-  height: calc(100vh - 74px);
+  height: calc(100vh - 96px);
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: 74px;
   }
 
   .search {
