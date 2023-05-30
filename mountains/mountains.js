@@ -27,7 +27,7 @@ async function mountainSunriseAndSunset(lat, lng) {
 
 function populateMountainInfo() {
   const selectedMountain = selectMountain.value;
-  mountainInfo.innerHTML = "";
+  mountainInfo.innerHTML = "";``
   
   if (selectedMountain === "select") {
     mountainInfoCard.style.display = "none";
@@ -52,4 +52,3 @@ function populateMountainInfo() {
   mountainInfoCardImg.src = `images/${mountain.img}`;
   mountainInfoCard.style.display = "block";
 }
-
