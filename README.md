@@ -1,6 +1,6 @@
 # capstone2-enjoy-the-outdoors
 
-For this capstone we created a website that allows users to search for National Parks and Mountains from a dropdown menu that provides different search options
+For this capstone we created a website that allows users to search for National Parks and Mountains from a dropdown menu that provides different search options and displays various types of information for the user
 
 <img width="1500" alt="Screenshot 2023-05-30 at 10 31 17 AM" src="https://github.com/Lesterzal/capstone2-enjoy-the-outdoors/assets/130569499/13e7f481-8d74-4b91-b43a-52902a918320">
 
